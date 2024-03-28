@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <center>
+            <h1 class="display-4">Game Title</h1>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#instructionsModal">Instructions</button>
+            <br><br>
+            <button id="playButton" class="btn btn-success">Play</button>
+            <h2 id="gameStatus" class="mt-4">Game Status</h2>
+            <div id="canvasContainer"></div>
+            <button id="restartButton" class="btn btn-danger mt-4">Restart</button>
+        </center>
+    </div>
+
+    <!-- Bootstrap Modal -->
+    <div class="modal fade" id="instructionsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Instructions</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Instructions here -->
+                    This is how you play the game...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            Created by Your Name
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ml5/0.8.4/ml5.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
